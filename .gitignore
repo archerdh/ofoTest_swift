@@ -20,6 +20,7 @@ xcuserdata/
 ## Other
 *.moved-aside
 *.xccheckout
+*.DS_Store
 *.xcscmblueprint
 
 ## Obj-C/Swift specific
