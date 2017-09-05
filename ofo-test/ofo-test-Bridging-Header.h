@@ -3,6 +3,7 @@
 //
 
 #import "SWRevealViewController.h"
+#import "FTIndicator/FTIndicator.h"
 #import <MAMapKit/MAMapKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <AMapSearchKit/AMapSearchKit.h>

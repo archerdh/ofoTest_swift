@@ -14,6 +14,7 @@
 		316BE6401F5D3F08008B9256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316BE63E1F5D3F08008B9256 /* Main.storyboard */; };
 		316BE6421F5D3F08008B9256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316BE6411F5D3F08008B9256 /* Assets.xcassets */; };
 		316BE6451F5D3F08008B9256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316BE6431F5D3F08008B9256 /* LaunchScreen.storyboard */; };
+		31A23D651F5E953100D715B1 /* OFOPointAnnoation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A23D641F5E953100D715B1 /* OFOPointAnnoation.swift */; };
 		DC3FDAB70053BF8FD77639F4 /* libPods-ofo-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DB1BD96BD80F9934B6152F /* libPods-ofo-test.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		316BE6411F5D3F08008B9256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		316BE6441F5D3F08008B9256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		316BE6461F5D3F08008B9256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31A23D641F5E953100D715B1 /* OFOPointAnnoation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFOPointAnnoation.swift; sourceTree = "<group>"; };
 		57DB1BD96BD80F9934B6152F /* libPods-ofo-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ofo-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79524265B5263059D6FFE39 /* Pods-ofo-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ofo-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-ofo-test/Pods-ofo-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 				316BE63C1F5D3F08008B9256 /* ViewController.swift */,
 				312420A71F5D44F2000C1AC6 /* MessageWebViewController.swift */,
 				312420AB1F5D5E0B000C1AC6 /* MenuViewController.swift */,
+				31A23D641F5E953100D715B1 /* OFOPointAnnoation.swift */,
 				316BE63E1F5D3F08008B9256 /* Main.storyboard */,
 				316BE6411F5D3F08008B9256 /* Assets.xcassets */,
 				316BE6431F5D3F08008B9256 /* LaunchScreen.storyboard */,
@@ -125,6 +128,7 @@
 		316BE62F1F5D3F08008B9256 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = OFO;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = auction;
@@ -227,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				312420A81F5D44F2000C1AC6 /* MessageWebViewController.swift in Sources */,
+				31A23D651F5E953100D715B1 /* OFOPointAnnoation.swift in Sources */,
 				316BE63D1F5D3F08008B9256 /* ViewController.swift in Sources */,
 				316BE63B1F5D3F08008B9256 /* AppDelegate.swift in Sources */,
 				312420AC1F5D5E0B000C1AC6 /* MenuViewController.swift in Sources */,
