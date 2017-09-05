@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FTIndicator
+import SWRevealViewController
+
 class ViewController: UIViewController, MAMapViewDelegate, AMapSearchDelegate, AMapNaviWalkManagerDelegate {
     var mapView: MAMapView!;
     var search: AMapSearchAPI!;

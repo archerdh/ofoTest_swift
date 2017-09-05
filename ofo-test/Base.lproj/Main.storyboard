@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -37,10 +36,13 @@
                                             <action selector="locationClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQ1-Y2-GkF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gl0-GP-UPY">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gl0-GP-UPY" userLabel="扫码用车">
                                         <rect key="frame" x="155" y="68" width="46" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="用车"/>
+                                        <connections>
+                                            <segue destination="bfo-gR-Mwh" kind="show" id="BLj-0I-sXf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSn-uB-be1">
                                         <rect key="frame" x="292" y="68" width="46" height="30"/>
@@ -79,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="-553"/>
+            <point key="canvasLocation" x="350" y="-576"/>
         </scene>
         <!--Message Web View Controller-->
         <scene sceneID="CZT-fO-FpJ">
@@ -97,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YcJ-cU-SK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="-553"/>
+            <point key="canvasLocation" x="1234" y="-576"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fdF-zB-76e">
@@ -115,7 +117,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXc-nl-TFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-158" y="-584"/>
+            <point key="canvasLocation" x="-737" y="-599"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="Zvr-4H-iYY">
@@ -404,7 +406,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mWa-e2-DXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18" y="302"/>
+            <point key="canvasLocation" x="-1858" y="259"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="n9F-e3-SqC">
@@ -426,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLm-gC-LLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1119" y="-339"/>
+            <point key="canvasLocation" x="-1858" y="-451"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9dO-4Z-IA9">
@@ -456,7 +458,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSV-wQ-s3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-577" y="491"/>
+            <point key="canvasLocation" x="-849" y="535"/>
+        </scene>
+        <!--Open Bike View Controller-->
+        <scene sceneID="fh0-TY-gQQ">
+            <objects>
+                <viewController id="bfo-gR-Mwh" customClass="OFOOpenBikeViewController" customModule="ofo_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RMu-wy-8XZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="kG9-Oe-7RU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Fs-X0-DRa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgA-Ez-1Kr">
+                                <rect key="frame" x="0.0" y="533.5" width="375" height="133.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hb-pp-bGG">
+                                        <rect key="frame" x="35" y="52" width="92" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="手动输入密码"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJN-id-t3S">
+                                        <rect key="frame" x="265" y="52" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="手电筒"/>
+                                        <connections>
+                                            <action selector="CamerClick:" destination="bfo-gR-Mwh" eventType="touchUpInside" id="DqN-7Z-y7L"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lgA-Ez-1Kr" firstAttribute="leading" secondItem="7Fs-X0-DRa" secondAttribute="leading" id="Lxe-4K-YHf"/>
+                            <constraint firstAttribute="trailing" secondItem="lgA-Ez-1Kr" secondAttribute="trailing" id="kF8-i8-vUh"/>
+                            <constraint firstAttribute="bottom" secondItem="lgA-Ez-1Kr" secondAttribute="bottom" id="nDR-ka-eej"/>
+                            <constraint firstItem="lgA-Ez-1Kr" firstAttribute="height" secondItem="7Fs-X0-DRa" secondAttribute="height" multiplier="1:5" id="nbb-BF-wQu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="menuView" destination="lgA-Ez-1Kr" id="1vk-Wj-35X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xyT-45-CcY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="222"/>
         </scene>
     </scenes>
     <resources>

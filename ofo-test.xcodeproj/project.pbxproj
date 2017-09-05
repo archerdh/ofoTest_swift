@@ -15,7 +15,9 @@
 		316BE6421F5D3F08008B9256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316BE6411F5D3F08008B9256 /* Assets.xcassets */; };
 		316BE6451F5D3F08008B9256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316BE6431F5D3F08008B9256 /* LaunchScreen.storyboard */; };
 		31A23D651F5E953100D715B1 /* OFOPointAnnoation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A23D641F5E953100D715B1 /* OFOPointAnnoation.swift */; };
-		DC3FDAB70053BF8FD77639F4 /* libPods-ofo-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DB1BD96BD80F9934B6152F /* libPods-ofo-test.a */; };
+		31A23D671F5EE64800D715B1 /* OFOOpenBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A23D661F5EE64800D715B1 /* OFOOpenBikeViewController.swift */; };
+		31A23D6A1F5EECD200D715B1 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 31A23D691F5EECD200D715B1 /* CodeScan.bundle */; };
+		CEEAB9F5CAC07968C6D8D814 /* Pods_ofo_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12954A199BC12E831CA7753 /* Pods_ofo_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +33,9 @@
 		316BE6441F5D3F08008B9256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		316BE6461F5D3F08008B9256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31A23D641F5E953100D715B1 /* OFOPointAnnoation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFOPointAnnoation.swift; sourceTree = "<group>"; };
-		57DB1BD96BD80F9934B6152F /* libPods-ofo-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ofo-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31A23D661F5EE64800D715B1 /* OFOOpenBikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFOOpenBikeViewController.swift; sourceTree = "<group>"; };
+		31A23D691F5EECD200D715B1 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
+		A12954A199BC12E831CA7753 /* Pods_ofo_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ofo_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79524265B5263059D6FFE39 /* Pods-ofo-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ofo-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-ofo-test/Pods-ofo-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC3FDAB70053BF8FD77639F4 /* libPods-ofo-test.a in Frameworks */,
+				CEEAB9F5CAC07968C6D8D814 /* Pods_ofo_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +54,7 @@
 		312420A41F5D43C1000C1AC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				57DB1BD96BD80F9934B6152F /* libPods-ofo-test.a */,
+				A12954A199BC12E831CA7753 /* Pods_ofo_test.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -76,11 +80,13 @@
 		316BE6391F5D3F08008B9256 /* ofo-test */ = {
 			isa = PBXGroup;
 			children = (
+				31A23D681F5EEC9900D715B1 /* Source */,
 				316BE63A1F5D3F08008B9256 /* AppDelegate.swift */,
 				316BE63C1F5D3F08008B9256 /* ViewController.swift */,
 				312420A71F5D44F2000C1AC6 /* MessageWebViewController.swift */,
 				312420AB1F5D5E0B000C1AC6 /* MenuViewController.swift */,
 				31A23D641F5E953100D715B1 /* OFOPointAnnoation.swift */,
+				31A23D661F5EE64800D715B1 /* OFOOpenBikeViewController.swift */,
 				316BE63E1F5D3F08008B9256 /* Main.storyboard */,
 				316BE6411F5D3F08008B9256 /* Assets.xcassets */,
 				316BE6431F5D3F08008B9256 /* LaunchScreen.storyboard */,
@@ -88,6 +94,14 @@
 				312420AD1F5E416D000C1AC6 /* ofo-test-Bridging-Header.h */,
 			);
 			path = "ofo-test";
+			sourceTree = "<group>";
+		};
+		31A23D681F5EEC9900D715B1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				31A23D691F5EECD200D715B1 /* CodeScan.bundle */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		7D7237CC0A86EC99A69D2AA4 /* Pods */ = {
@@ -172,6 +186,7 @@
 				316BE6451F5D3F08008B9256 /* LaunchScreen.storyboard in Resources */,
 				316BE6421F5D3F08008B9256 /* Assets.xcassets in Resources */,
 				316BE6401F5D3F08008B9256 /* Main.storyboard in Resources */,
+				31A23D6A1F5EECD200D715B1 /* CodeScan.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +249,7 @@
 				31A23D651F5E953100D715B1 /* OFOPointAnnoation.swift in Sources */,
 				316BE63D1F5D3F08008B9256 /* ViewController.swift in Sources */,
 				316BE63B1F5D3F08008B9256 /* AppDelegate.swift in Sources */,
+				31A23D671F5EE64800D715B1 /* OFOOpenBikeViewController.swift in Sources */,
 				312420AC1F5D5E0B000C1AC6 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
